@@ -123,3 +123,13 @@ nlu:
       - give me your cheesiest joke
       - give me a cheesy joke
       - tell me a cheesy joke
+
+  - intent: ask_time
+    examples: |
+      - tell me the time
+      - tell me the current time
+      - what is the time right now?
+      - what is the current time?
+      - what is the current time at the minute?
+      - what is the time at the moment?
+      - what time is it?

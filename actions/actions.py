@@ -73,3 +73,17 @@ class ActionFetchJoke(Action):
         dispatcher.utter_message(text=r['joke'])
 
         return []
+
+
+class ActionFetchTime(Action):
+
+    def name(self):
+        return "action_fetch_time"
+
+    def run(self, dispatcher, tracker: Tracker, domain):
+        from datetime import datetime
+
+        dispatcher.utter_message(text="The time is {0}.".format(
+            datetime.now().strftime("%H:%M")))
+
+        return []

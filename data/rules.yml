@@ -25,3 +25,8 @@ rules:
     steps:
       - intent: ask_joke
       - action: action_fetch_joke
+
+  - rule: Ask for the current time
+    steps:
+      - intent: ask_time
+      - action: action_fetch_time
